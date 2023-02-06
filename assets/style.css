@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  z-index: 9999999;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+img {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+header {
+  display: relative;
+  padding: 20px;
+  border: 5px salmon solid;
+  background-color: aqua;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: lightgray;
+  border: 2px lightcoral solid;
+  width: 230px;
+}
+
+#navbar {
+  padding: 5px;
+  margin-top: -90px;
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  list-style-type: none;
+}
+
+#navbar li {
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 3px;
+  background-color: lightgray;
+  border: 2px lightcoral solid;
+}
+
+#navbar a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-color: black;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: orange;
+  opacity: 0.5;
+}
+
+#navbar a:active {
+  background-color: darkred;
+  opacity: 0.5;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: row;
+}
+
+#about-me h2 {
+  margin-top: 60px;
+  align-items: center;
+  margin: auto;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  width: 350px;
+}
+
+#my-work {
+  display: flex;
+  flex-direction: row;
+}
+
+main ul li {
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  border: 5px darkblue solid;
+  margin: 15px;
+  text-align: center;
+  float: center;
+}
+
+main ul a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+}
+
+main ul a:hover {
+  background: orange;
+  opacity: 0.5;
+  border: 5px green solid;
+}
+
+main ul a:active {
+  background: darkred;
+  opacity: 0.5;
+}
+
+#google {
+  display: flex;
+  background-image: url(google.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#youtube {
+  background-image: url(youtube.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#facebook {
+  background-image: url(facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#amazon {
+  background-image: url(amazon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#twitter {
+  background-image: url(twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+article {
+  display: flex;
+}
