@@ -17,45 +17,68 @@ img {
   position: relative;
   margin: auto;
   margin-top: 30px;
+  border: 4px salmon solid;
 }
 header {
   display: relative;
   padding: 20px;
   border: 5px salmon solid;
   background-color: aqua;
+  margin: auto;
+  padding-bottom: -20px;
 }
 
 h1 {
+  position: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: lightgray;
   border: 2px lightcoral solid;
   width: 230px;
+  margin-top: 300px;
+  bottom: 200px;
+  vertical-align: center;
+  margin: auto;
+  float: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  background-color: lightgreen;
+  border: 3px black solid;
 }
 
 #navbar {
   padding: 5px;
-  margin-top: -90px;
   float: right;
   font-family: "Courier New", Courier, monospace;
   list-style-type: none;
+  margin-bottom: -10px;
 }
 
 #navbar li {
-  display: flex;
-  font-weight: bold;
-  font-size: 12px;
+  display: block;
+  float: left;
+  margin: 3px;
+  font-size: 10px;
   padding: 3px;
   background-color: lightgray;
   border: 2px lightcoral solid;
 }
 
 #navbar a {
+  position: relative;
+  display: block;
   flex: 1;
+  flex-direction: row;
   text-decoration: none;
   outline: none;
   text-color: black;
   text-align: center;
+  margin: auto;
 }
 
 #navbar a:hover {
@@ -71,6 +94,7 @@ h1 {
 #about-me {
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 #about-me h2 {
@@ -84,12 +108,13 @@ p {
   text-align: center;
   padding: 25px;
   margin: auto;
-  width: 350px;
+  width: 250px;
 }
 
 #my-work {
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 main ul li {
@@ -103,10 +128,12 @@ main ul li {
   margin: 15px;
   text-align: center;
   float: center;
+  margin: auto;
 }
 
 main ul a {
   flex: 1;
+  margin: 5px;
   text-decoration: none;
   outline: none;
 }
@@ -124,6 +151,8 @@ main ul a:active {
 
 #google {
   display: flex;
+  height: 350px;
+  width: 325px;
   background-image: url(google.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -160,4 +189,10 @@ main ul a:active {
 
 article {
   display: flex;
+  margin: auto;
+}
+
+article ul {
+  vertical-align: center;
+  margin: auto;
 }
