@@ -132,7 +132,6 @@ main {
 main ul li {
   display: flex;
   list-style-type: none;
-  display: flex;
   flex-direction: row;
   width: 200px;
   height: 200px;
@@ -236,6 +235,16 @@ article ul {
   header {
     display: block;
     width: 80%;
+  }
+
+  img {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 4px salmon solid;
+    height: 500px;
+    width: 500px;
   }
 
   section {
