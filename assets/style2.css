@@ -2,18 +2,15 @@
   box-sizing: border-box;
   z-index: 9999999;
 }
-
-body {
+​ body {
   background-color: lightyellow;
 }
-
-body {
+​ body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
 }
-
-img {
+​ img {
   position: relative;
   margin: auto;
   margin-top: 30px;
@@ -27,8 +24,7 @@ header {
   margin: auto;
   padding-bottom: -20px;
 }
-
-h1 {
+​ h1 {
   position: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -43,23 +39,20 @@ h1 {
   font-size: 30px;
   text-align: center;
 }
-
-h2 {
+​ h2 {
   text-align: center;
   padding: 10px;
   background-color: lightgreen;
   border: 3px black solid;
 }
-
-#navbar {
+​ #navbar {
   padding: 5px;
   float: right;
   font-family: "Courier New", Courier, monospace;
   list-style-type: none;
   margin-bottom: -10px;
 }
-
-#navbar li {
+​ #navbar li {
   display: block;
   float: left;
   margin: 3px;
@@ -68,8 +61,7 @@ h2 {
   background-color: lightgray;
   border: 2px lightcoral solid;
 }
-
-#navbar a {
+​ #navbar a {
   position: relative;
   display: block;
   flex: 1;
@@ -80,65 +72,51 @@ h2 {
   text-align: center;
   margin: auto;
 }
-
-#navbar a:hover {
+​ #navbar a:hover {
   background-color: orange;
   opacity: 0.5;
 }
-
-#navbar a:active {
+​ #navbar a:active {
   background-color: darkred;
   opacity: 0.5;
 }
-
-#about-me {
+​ #about-me {
   display: flex;
   flex-direction: row;
   margin: auto;
   float: left;
 }
-
-#about-me h2 {
+​ #about-me h2 {
   margin-top: 60px;
   /* align-items: left; */
   margin: auto;
 }
-
-p {
+​ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   padding: 25px;
   margin: auto;
   width: 250px;
 }
-
-#my-work {
+​ #my-work {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
-
-#my-work h2 {
+​ #my-work h2 {
   margin-top: 60px;
   /* align-items: left; */
   margin: auto;
 }
-
-main {
+​ main {
   white-space: pre-wrap;
   flex: 1 0 100%;
 }
-
-main ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex: 1;
-}
-
-main ul li {
+​ main ul li {
   display: flex;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
   width: 400px;
   height: 400px;
   border: 5px darkblue solid;
@@ -147,87 +125,78 @@ main ul li {
   float: center;
   margin: auto;
 }
-
-main ul a {
+​ main ul a {
   flex: 1;
   margin: 5px;
   text-decoration: none;
   outline: none;
 }
-
-main ul a:hover {
+​ main ul a:hover {
   background: orange;
   opacity: 0.5;
   border: 5px green solid;
 }
-
-main ul a:active {
+​ main ul a:active {
   background: darkred;
   opacity: 0.5;
 }
-
-#google {
+​ #google {
   display: flex;
-  height: 350px;
-  width: 325px;
+  /* height: 350px;
+    width: 325px; */
   background-image: url(google.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-#youtube {
+​ #youtube {
   background-image: url(youtube.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-
-#facebook {
+​ #facebook {
   background-image: url(facebook.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-#amazon {
+​ #amazon {
   background-image: url(amazon.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-#twitter {
+​ #twitter {
   background-image: url(twitter.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-article {
+​ article {
   display: flex;
   margin: auto;
   justify-content: center;
 }
-
-article ul {
+​ article ul {
   vertical-align: center;
   margin: auto;
 }
-
-@media screen and (min-width: 650px) {
+​ @media screen and (min-width: 650px) {
   header {
     display: block;
     width: 80%;
   }
   main {
     flex: 0 0 50%;
+    max-width: 50%;
+    align-self: center;
   }
   section,
   article {
     width: 80%;
   }
-  main {
+  main ul {
     justify-content: center;
   }
   section,
@@ -235,18 +204,12 @@ article ul {
     flex-direction: row;
   }
 }
-
-@media screen and (min-width: 1100px) {
+​ @media screen and (min-width: 1100px) {
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  img {
-    height: 30%;
-    width: 30%;
   }
   header {
     display: block;
@@ -266,6 +229,6 @@ article ul {
     flex-direction: row;
     flex-wrap: wrap;
     flex: 0 0 49%;
-    width: 49%;
+    width: 100%;
   }
 }
